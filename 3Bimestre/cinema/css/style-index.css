@@ -1,0 +1,175 @@
+body{
+    margin: 0%;
+    background-color: #2650905c;
+    font-family: serif;
+}
+
+header{
+    background: #1d0f56;
+    padding-inline: 16px;
+    position: absolute;
+    top: 0px;
+    width: 1536px;
+    font-family: serif;
+}
+
+.nav{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log{
+    margin: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffff;
+}
+
+/*Barra de Pesquisa - Início*/
+.search-box{
+
+    position: relative;
+    background: #341a9be1;   
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder{
+    font-size: 17px;
+    font-family: serif;
+    color: #ffff;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: 0.5s;
+    font-family: serif;
+}
+
+input{
+    font-family: serif;
+    color: #5579ab;
+    font-size: 17px;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #341a9be1;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;  
+}
+
+.search-box:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: #1d0f56;
+
+
+}
+
+/*Barra de Pesquisa - Final*/
+
+h1{
+    font-family: serif;
+    margin: 20px;
+}
+
+
+.sinopse{
+    position: absolute;
+    top: 700px;
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+    font-family: serif;
+    font-size: large;
+}
+
+.img-body{
+    position: absolute;
+    left: 10%;
+    top: 190px;
+    border-radius: 40px;
+    border: 1px solid #162843;
+    box-shadow: 0 0 50px #162843;
+}
+
+.tittle{
+    position: absolute;
+    top: 100px;
+    left: 625px;
+    font-family: serif;
+}
+
+iframe{
+    position: absolute;
+    top: 970px;
+    left: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    border: 1px solid #162843;
+    box-shadow: 0 0 50px #162843;
+}
+
+.trailer{
+    position: absolute;
+    top: 910px;
+    left: 15px;
+    margin: 20px;
+}
+
+.watch{
+    position: absolute;
+    top: 1300px;
+    left: 15px;
+    margin: 5px;
+}
+
+
+.link{
+    position: absolute;
+    top: 115px;
+    left: 20px;
+    margin: 0px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+p>a{
+    color: red;
+}
+
+h2>a{
+    color: red;
+}
+
+a:hover{
+    text-decoration: underline;
+}
