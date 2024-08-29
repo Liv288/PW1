@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Mali Cooking</title>
+    <link rel="stylesheet" href="./CSS/stlyle.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav>
+            <div class="logo">
+                <font color="#571515"> Mali Cooking </font>
+            </div>
+            <div class="search-box">
+                <ul class="nav-itens">
+                    <li class="search-btn"><input type="text" class="search-text" placeholder="Pesquisa...">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+          <div class="headcoluna1" id="headecoluna1>">
+            <span>Menu</span>  
+             <button class="hamburger" id="menubth" onclick="showMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                </svg>  
+             </button>
+          </div>
+    </header>
+
+        <div class="sideBar" id="sideBar">
+             <center>
+            <button class="hamburger2" id="closebtn" onclick="closeMenu()"></button>
+             <p><a href="index.html">  Home  </a></p>
+             <br/>
+             <p><a href="indexform.html"> Contatos </a></p>
+             </center>
+       </div>
+
+       <div>
+         <h1>Formulário de Contato</h1>
+       </div>
+      
+       <div class="form">
+        <div class="box">
+            <form action="">
+            <fieldset>
+            <br>
+         <div>
+                         <label> Nome: </label>
+                         <input type="text" id="txnome" name="txnome" />
+                      </div>
+                      <br />
+                      
+                      <div>
+                         <label> E-mail </label>
+                         <input type="email" id="txEmail" name="txEmail" />
+                      </div>
+                      <br />
+                    
+                      <div>
+                         <label> Digite o assunto:</label>
+                         <input type="text" id="txnome" name="txnome" />
+                      </div>
+                      <br />
+                     
+                      <div>
+                         <label> Digite a mensagem: </label>
+                         <textarea></textarea>
+                      </div>
+                      <br />
+                      
+                      <div class="enviar">
+                        <button type="submit" class="enviar"> Enviar </button>
+                      </div>
+  
+              </fieldset>
+              
+          </form>
+       </div>
+      
+        
+    </div>
+    <footer>
+        <div class="coluna1">
+            <font color="#FFDDDD"> <p>Mali CookingMali CookingMali CookingMali CookingMali CookingMali CookingMali Cooking</p></font>  
+        </div>
+
+        <div class="coluna2">
+            <center><p>Todos os Direitos  reservados para "Mali Cooking" -  2024</p></center> 
+        </div>
+
+        <div class="coluna3">
+            <font color="#FFDDDD"> <p>Mali CookingMali CookingMali CookingMali CookingMali CookingMali CookingMali Cooking</p></font>  
+        </div>
+    </footer>
+
+  <script src="app.js"></script>
+    
+   
+</body>
+</html>
