@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+  
+<style>
+    h1{
+        color:rgb(226, 43, 165);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    label{
+        color:rgb(235, 150, 228);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: medium;
+    }
+</style>
+
+
+
+
+
+<body>
+    <form action="" method="">
+
+        <h1>Formulário</h1>
+     <div>
+          <Label> Time que voce torce: </Label>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> São Paulo </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Corinthians </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Palmeiras </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Santos </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Flamengo </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Vasco </span>
+          <input type="radio" id="rbTime" name="rbTime" /> <span> Outros </span>
+     </div>
+    <br />
+
+     <div>
+        <label> Cores do time: </label> 
+        <input type="color" name="txCor" />
+        <input type="color" name="txCor" />
+        <input type="color" name="txCor" />
+    </div>
+     <br />
+
+     <div>
+        <label> Coloque o escudo do seu time: </label>
+        <input type="file" id="flEscudo" name="flEscudo" />
+     </div>
+     <br />
+
+    <div>
+        <label> Titulos que seu time ganhou: </label>
+        <input type="checkbox" id="ckPaulista" name="ckPaulista" /> <span> Paulista </span>
+        <input type="checkbox" id="ckBrasileiro" name="ckBrasileiro" /> <span> Brasileiro </span>
+        <input type="checkbox" id="ckCopadoMundo" name="ckCopadoMundo" /> <span> Copa do Mundo </span>
+        <input type="checkbox" id="ckLibertadores" name="ckLibertadores" /> <span> Libertadores </span>
+        <input type="checkbox" id="ckSuperCopa" name="ckSuperCopa" /> <span> Super Copa</span>
+        <input type="checkbox" id="ckRecopa" name="ckRecopa" /> <span> Recopa </span>
+        <input type="checkbox" id="ckMundialdeClubes" name="ckMundialdeClubes" /> <span> Mundial de Clubes </span>
+        <input type="checkbox" id="ckNenhum" name="ckNenhum" /> <span> Nenhum </span>
+    </div>
+  <br />
+
+   <div>
+    <label> Coloque o hino do seu time: </label>
+    <textarea></textarea>
+   </div>
+
+   <br/>
+   <div>
+    <input type="submit" value="Enviar" />
+   </div>
+    </form>
+
+</body>
+</html>
