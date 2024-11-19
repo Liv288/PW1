@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
+
+
+body{
+    background-color: #f9f4e3;
+    margin: 0;
+}
+
+.updock-regular {
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+/* Header-Inicio */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    min-height: 100%;
+
+    width: 100%;
+    height: 100%2;
+    box-shadow: 0 0 50px #100704;
+}
+
+header section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/header.png);
+    background-size: cover;
+}
+
+section .transparent{
+    background-color: #1e0e0796;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.image{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    background-color: #f4e8c2;
+    border-radius: 360px;
+    width: 30vh;
+    height: 30vh;
+    z-index: 2;
+}
+
+.link{
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    background-color: #5c0303;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link:hover{
+    background-color: #e30224;
+    color: rgb(255, 249, 241);
+    text-decoration: none;
+}
+
+.textinho{
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    z-index: 2;
+    color: #f2f2f2;
+    font-size: 30px;
+
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;  
+}
+
+p{
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #5c0303;
+}
+
+a{
+    color: antiquewhite;
+    position: sticky;
+    display: inline;
+    padding: 8px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: antiquewhite;
+}
+/* Header-Final */
+
+.conceito{
+    margin: 11%;
+    text-align: center;
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: 400;
+}
+
+
+/* Trabalho-Inicio */
+
+.tittle{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 50px;
+    color: #e30224;
+}
+
+.secao{
+    background-color: #eeeadc;
+    text-align: center;
+    font-size: 20px;
+}
+
+.eventos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.h2-eventos{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 50px;
+    color: #e30224;
+    padding-top: 20px;
+}
+
+.imagem{
+    border-radius: 10px;
+} 
+
+.p-eventos{
+    font-size: 25px;
+}
+
+.h2-espacos{
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+/* Trabalho-Inic4o */
+
+/* Secao-inicio */ /*ajustar responsividade*/ /*class secao*/
+.paginas{
+    background-color: #f9f4e3;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+
+.p-pagina{
+    margin: 50px;
+}
+
+.h2-pagina{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 50px;
+    color: #e30224;
+}
+
+.divisao{
+    display: flex;
+    justify-content: space-around;
+    color: #f2f2f2;
+}
+
+.imagem-pag{
+    border-radius: 10px;
+    position: relative;
+    width: 370px;
+    height: 370px;
+}
+
+.enter{
+    position: absolute;
+    top: 550px;
+    left: 178px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.enter:hover{
+    color: #f1ece6;
+}
+
+.enter2{
+    position: absolute;
+    top: 550px;
+    left: 700px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.enter2:hover{
+    transition: 0.1s;
+}
+
+.enter-3{
+    position: absolute;
+    top: 550px;
+    left: 1165px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.enter-3:hover{
+    transition: 0.1s;
+}
+
+/* Secao-inicio */
+
+/* footer-inicio */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #5c0303;
+    margin-top: 50px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    align-items: end;
+}
+
+.icons:not(:last-child){
+    margin-right: 15px;
+}
+
+.icons{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin-top: 3px;
+    padding: 3px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+.links-rodape{
+    display: flex;
+    justify-content: center;
+    background-color: #5c0303;
+    align-items: start;
+    height: 75px;
+    font-size: 20px;
+}
+
+.direitos{
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: antiquewhite;
+}
+
+.espaco{
+    background-color: #380202;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer-final */
+
+@media screen and (max-width:768px) {
+    /*Header inicio*/
+    .image {
+        width: 25vh; /* Tamanho adaptável */
+        height: 25vh;
+        margin-left: -20%; /* Centralizar */
+        margin-top: 20%;
+        display: block;
+    }
+
+    .secao header{
+        text-align: center;
+    }
+
+    .textinho{
+        margin-left: -20%;
+        margin-top: 0%;
+    }
+
+    .link{
+        margin-top: 15%;
+        margin-left: -20%;
+    }
+
+    /*Header Fim*/
+
+    /*Começo "secao"*/
+    .eventos{
+        display: block;
+    }
+    .h2-espacos{
+        margin-left: -20%;
+    }
+    /*Fim"secao"*/
+
+    /*Começo Cardápio/divisão*/
+    .divisao{
+        display: block;
+    }
+    .enter {
+        margin-left: -11%;
+        margin-top: 70%;
+        font-size: 150%;
+    }
+    .enter2 {
+        margin-left: -135%;
+        margin-top: 160%;
+        font-size: 150%;
+    }
+    .enter-3{
+        margin-left: -260%;
+        margin-top: 250%;
+        font-size: 150%;
+    }
+    /*Fim Cardápio/divisão*/
+
+    /*Começo Rodapé*/
+    .espaco{
+        text-align: center;
+    }
+    /*Fim Rodapé*/
+
+    .direitos{
+        font-size: x-small;
+    }
+} 
+
