@@ -1,6 +1,6 @@
 function limitarCoqueteis() {
-    var coquetelB = document.getElementById('coquetelB');
-    var coquetelP = document.getElementById('coquetelP');
+    const coquetelB = document.getElementById('coquetelB');
+    const coquetelP = document.getElementById('coquetelP');
 
     if (coquetelB.checked) {
         coquetelP.checked = false;
@@ -12,22 +12,39 @@ function limitarCoqueteis() {
 }
 
 function calcularValorTotal() {
-    var numConvidados = parseInt(document.getElementById("convidados").value);
+    const numConvidados = parseInt(document.getElementById("convidados").value);
 
+    const precoMesaFrutas = 10;
+    const precoDecoracao = 500;
+    const precoDj = 800;
+
+    const name = document.getElementById("nome").value;
+    const nameSelecionado = name ? name.value : alert("Digite um nome");
+
+    const email = document.getElementById("gMail").value;
+    const emailSelecionado = email ? email.value : alert("Digite um email");
     
-    var precoMesaFrutas = 10;
-    var precoDecoracao = 500;
-    var precoDj = 800;
+    const dtNasci = document.getElementById("dtNasc").value;
+    const dtNascSelecionado = dtNasci ? dtNasci.value : alert("Coloque uma data de nascimento");
+
+    const genero = document.querySelector('input[name="Radiosexo"]:checked');
+    const generoSelecionado = genero ? genero.value : alert("Selecione um Sexo");
+
+    const opcoesSelecionadas = [];
+    const checkboxes = document.querySelectorAll('input[name="tipo[]"]:checked');
+    checkboxes.forEach(checkbox => {
+        opcoesSelecionadas.push(checkbox.value);
+    });
 
   
-    var mesaFrutas = document.getElementById("ckFruta").checked;
-    var decoracao = document.getElementById("ckDecoracao").checked;
-    var dj = document.getElementById("ckDj").checked;
+    const mesaFrutas = document.getElementById("ckFruta").checked;
+    const decoracao = document.getElementById("ckDecoracao").checked;
+    const dj = document.getElementById("ckDj").checked;
 
     
-    var jantar = document.getElementById("jantar").checked;
-    var coquetelB = document.getElementById("coquetelB").checked;
-    var coquetelP = document.getElementById("coquetelP").checked;
+    const jantar = document.getElementById("jantar").checked;
+    const coquetelB = document.getElementById("coquetelB").checked;
+    const coquetelP = document.getElementById("coquetelP").checked;
 
     let total = 1000;
 
@@ -41,4 +58,10 @@ function calcularValorTotal() {
     if (coquetelP) total += 60 * numConvidados;
     
     document.getElementById("resultado").innerText = `R$ ${total.toFixed(2)}`; //innerText altera o texto visível dentro de um elemento HTML
+
+
+    const informacoes = document.getElementById("informacoes");
+    informacoes.innerHTML = `
+                <p>Obrigado ${name} do email ${email}por agentar em nosso buffet.</p>
+            `;
 }
